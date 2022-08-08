@@ -1,0 +1,39 @@
+text = "!@#$%^&*()_?><\|/.,=+-:'"
+print(re.escape(text))
+меняет слово
+pattern = r"Nigeria"
+new_word = "The World"
+text = "TNN is lergest Ananlytics of Nigeria"
+res = re.sub(pattern, new_word, text)
+print(res)
+    
+совпадение
+pattern = r"LA"
+text = "LA, Police Departament of LA"
+res = re.sub(pattern, text)
+if  res:
+    print('Match!')
+    print(res)
+else:
+    print('Not Match!')
+    
+уберает ла
+pattern = r"LA"
+text = "LA, Police Departament of LA"
+res = re.split(pattern, text)
+if  res:
+    print('Match!')
+    print(res)
+else:
+    print('Not Match!')
+
+находит все
+pattern = r"LA"
+text = "LA, Police Departament of LA"
+res = re.findall(pattern, text)
+if  res:
+    print('Match!')
+    print(res)
+else:
+    print('Not Match!')
+    
